@@ -1,5 +1,5 @@
 
-# OPTIMIZATION OF RECOMMENDATION SYSTEM FOR CPU IN TENSORFLOW
+# OPTIMIZATION OF RECOMMENDATION SYSTEM WITH NEURAL COLLABORATIVE FILTERING FOR CPU IN TENSORFLOW
 
 ## GOAL
 This tutorial will introduce you to CPU performance optimizations for recommendation systems with Neural Collaborative Filtering and provide performance improvements by:

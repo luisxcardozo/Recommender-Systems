@@ -60,6 +60,20 @@ Use the --help or -h flag to get a full list of possible arguments.
 
 Note the ml-20m dataset is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 
-
+### To train and evaluate the model, issue the following command:
+```
+python ncf_main.py
+```
+Arguments:
+```
+--model_dir: ( default - /tmp/ncf/)
+```
+```
+--data_dir: (This should be set to the same directory given to the data_download's data_dir argument.)
+```
+```
+--dataset: (default - it is ml-1m)
+```
+For additional arguments for models and training process use the --help or -h flag to get a full list, with detailed descriptions.
 
 

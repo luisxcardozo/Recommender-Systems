@@ -81,7 +81,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-## NCF OPTIMIZATION
+## Step 4. NCF OPTIMIZATION
 
 Run the launch_benchmark.py script with the appropriate parameters.
 ```

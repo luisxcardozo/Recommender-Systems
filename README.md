@@ -90,11 +90,11 @@ Run the launch_benchmark.py script with the appropriate parameters.
 ```
 --checkpoint - (path to checkpoint directory for the Pre-trained model)
 ```
-For Throughput:
---batch-size 256, 
---socket-id 0, 
---checkpoint, and
---model-source-dir
+#### For Throughput:
+- batch-size 256, 
+- socket-id 0, 
+- checkpoint, and
+- model-source-dir
 ```
 $ python launch_benchmark.py \
     --checkpoint /home/myuser/ncf_fp32_pretrained_model \
@@ -121,11 +121,11 @@ tep 23200, 867319.7 recommendations/sec, 0.29516 msec/batch
 Average recommendations/sec across 23594 steps: 903932.8 (0.28381 msec/batch)
 ...
 ```
-For Latency:
---batch-size 1, 
---socket-id 0, 
---checkpoint, and
---model-source-dir
+#### Latency:
+- batch-size 1, 
+- socket-id 0, 
+- checkpoint, and
+- model-source-dir
 
 ```
 $ python launch_benchmark.py \
@@ -156,3 +156,30 @@ Latency log:
 Average recommendations/sec across 6040001 steps: 4573.0 (0.21920 msec/batch)
 ...
 ```
+#### Accuracy
+- batch-size 256,
+- socket-id 0, 
+-checkpoint path, and 
+- model-source-dir
+```
+$ python launch_benchmark.py \
+    --checkpoint /home/myuser/ncf_fp32_pretrained_model \
+    --model-source-dir /home/myuser/tensorflow/models \
+    --model-name ncf \
+    --socket-id 0 \
+    --accuracy-only \
+    --batch-size 256 \
+    --framework tensorflow \
+    --precision fp32 \
+    --mode inference \
+    --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl
+```
+Log: (HR: Hit Ratio (HR) NDCG: Normalized Discounted Cumulative Gain)
+```
+...
+E0104 20:03:50.940653 140470332344064 tf_logging.py:110] CRITICAL - Iteration 1: HR = 0.2290, NDCG = 0.1148
+...
+```
+
+
+

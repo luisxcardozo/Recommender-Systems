@@ -14,6 +14,12 @@ and proves that matrix factorization is a special case within NCF. It provides s
 Neural Collaborative Filtering can be described as a generalization of Matrix Factorization.
 In Recommender System, Matrix Factorization refers to the decomposition of the Utility Matrix into sub-matrices. During prediction, these sub-matrices are multiplied in an attempt to replicate the original Utility Matrix, which is factorized to minimize the error between the multiplication and the original matrix (Fig. 1).
 
-![Inference Time breakdown](https://github.com/luisxcardozo/Image-Segmentation/blob/master/ISBackground/Inference%20Time%20Breakdown.PNG)
+![Matrix Vectorization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/matrix%20vectorization.PNG)
 
 But this dot product limits the expressiveness of the Item and User vectors.
+
+## ARCHITECTURE
+This framework adopts a multi-layer representation to model user interaction through a full neural treatment of collaborative treatment.
+The bottom layer consist of two feature vectors VUu and VIi  that describe the user-item dynamic and can be customized to support a range of conditions to model users and items.
+
+![NCF ARCHITECTURE](xxx)

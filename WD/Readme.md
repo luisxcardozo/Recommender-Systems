@@ -96,3 +96,28 @@ Using model init: /workspace/benchmarks/classification/tensorflow/wide_deep/infe
 PYTHONPATH: :/workspace/models
 RUNCMD: python common/tensorflow/run_tf_benchmark.py         --framework=tensorflow         --model-name=wide_deep         --precision=fp32         --mode=inference         --model-source-dir=/workspace/models         --intelai-models=/workspace/intelai_models         --batch-size=1                  --data-location=/dataset         --checkpoint=/checkpoints
  ``` 
+
+## Step 3. Optimizing TensorFlow* for CPU.  
+(*PERFORMANCE OPTIMIZATION*)
+<img align="right" width="359" height="82" src="https://github.com/luisxcardozo/Image-Segmentation/blob/master/ISBackground/Step_three.PNG"> 
+Intel developed specialized primitives libraries that increase Deep Neural Network model performance. This performance boost can be installed from Anaconda* or from the Intel® channel and run on Linux*, and on Windows* or OS*. 
+
+- [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
+
+# WD OPTIMIZATION
+
+(ip)
+
+# RESULTS
+Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.
+
+
+| Optimization Step | Throughput (Image/sec) | Performance Improvement |
+| :---         |     :---:      |    :---:      |
+|Benchmark   | (ip)     |     |
+| Optimized TensorFlow*     | (ip)       | tbd     |
+| WD Optimization  | **IP**      | **xxX**      |
+
+# CONCLUSION
+The optimization of TensorFlow* allows for deep-learning models built for this common framework to run several magnitudes faster on Intel® processors to increase scaling and analytical flexibility. The Xeon® processor is designed to scale comfortably to reduce training time of machine learning models. The collaboration between Intel® and Google* engineers to optimize TensorFlow* for higher performance on CPUs is part of ongoing efforts to increase the flexibility of AI applications by running on multiple mediums. Intel® believes the expansion of this accessibility is critical in the development of the next generation of AI models, and our efforts shed light into this by obtaining a projected 5.4x performance improvement with Intel® Xeon® Platinum 8180®. 
+

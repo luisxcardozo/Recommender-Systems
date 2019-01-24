@@ -16,7 +16,7 @@ Models’ performance are optimized by leveraging Intel®’s highly optimized m
 
 KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recommender Systems, Tensorflow Optimization,
 
-### BACKGROUND AND ARCHITECTURE (*INCLUDE OBJECT*)
+### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/NCF_Bacground.md)
 
 #### Evaluation Environment (*INCLUDE OBJECT*)
 

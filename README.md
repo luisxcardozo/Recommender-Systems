@@ -49,13 +49,11 @@ python ../datasets/movielens.py
 ```
 Arguments:
  ```
-- -data_dir: 
+--data_dir: (default - /tmp/movielens-data/ 0
  ```
-where to download and save the preprocessed data. By default, it is /tmp/movielens-data/.
 ```
---dataset: 
+--dataset: (default - it is ml-1m)
 ```
-dataset name to be downloaded and preprocessed. By default, it is ml-1m.
 Use the --help or -h flag to get a full list of possible arguments.
 
 Note the ml-20m dataset is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.

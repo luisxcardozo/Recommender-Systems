@@ -22,4 +22,4 @@ But this dot product limits the expressiveness of the Item and User vectors.
 This framework adopts a multi-layer representation to model user interaction through a full neural treatment of collaborative treatment.
 The bottom layer consist of two feature vectors VUu and VIi  that describe the user-item dynamic and can be customized to support a range of conditions to model users and items.
 
-![NCF ARCHITECTURE](xxx)
+![NCF ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/NCF%20Architecture.PNG)

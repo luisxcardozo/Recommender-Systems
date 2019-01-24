@@ -35,6 +35,10 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 ## 1. Getting started.
 Access and download the [MovieLens](http://files.grouplens.org/datasets/movielens/) datasets, and prepare the data for training.
 
+The datasets used are: 
+- ml-1m (MovieLens 1 million), composed by 1,000,209 anonymous ratings of roughly 3,706 movies by 6,040 users, ratings are contained in the file "ratings.dat" without header row.
+- ml-20m (MovieLens 20 million), with 20,000,263 ratings of 26,744 movies by 138493 users, ratings are contained in the file "ratings.csv".
+
 ## 2. Determining benchmark.
 
 

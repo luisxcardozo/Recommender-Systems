@@ -15,7 +15,7 @@ Models’ performance are optimized by leveraging Intel®’s highly optimized m
 
 KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Tensorflow Optimization,
 
-### BACKGROUND AND ARCHITECTURE(*INCLUDE OBJECT*)
+### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/WD_Background.md)
 
 #### Evaluation Environment (*INCLUDE OBJECT*)
 

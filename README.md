@@ -37,10 +37,21 @@ Access and download the [MovieLens](http://files.grouplens.org/datasets/movielen
 
 The datasets used are: 
 - ml-1m (MovieLens 1 million), composed by 1,000,209 anonymous ratings of roughly 3,706 movies by 6,040 users, ratings are contained in the file "ratings.dat" without header row.
-- ml-20m (MovieLens 20 million), with 20,000,263 ratings of 26,744 movies by 138493 users, ratings are contained in the file "ratings.csv".
+- ml-20m (MovieLens 20 million), with 20,000,263 ratings of 26,744 movies by 138493 users, ratings are contained in the file "ratings.csv."
+
+(In both cases, timestamps are represented in seconds starting midnight Coordinated Universal Time (UTC) of January 1, 1970. Each user has at least 20 ratings)
 
 ## 2. Determining benchmark.
+To download the dataset, please install Pandas package first. Then issue the following command:
 
+```
+python ../datasets/movielens.py
+```
+Arguments:
 
+--data_dir: where to download and save the preprocessed data. By default, it is /tmp/movielens-data/.
+--dataset: dataset name to be downloaded and preprocessed. By default, it is ml-1m.
+Use the --help or -h flag to get a full list of possible arguments.
 
+Note the ml-20m dataset is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 

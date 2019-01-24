@@ -104,7 +104,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-# WD OPTIMIZATION
+## Step 4. WD OPTIMIZATION
 
 (ip)
 

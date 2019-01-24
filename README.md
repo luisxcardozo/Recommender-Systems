@@ -159,7 +159,7 @@ Average recommendations/sec across 6040001 steps: 4573.0 (0.21920 msec/batch)
 #### Accuracy
 - batch-size 256,
 - socket-id 0, 
--checkpoint path, and 
+- checkpoint path, and 
 - model-source-dir
 ```
 $ python launch_benchmark.py \

@@ -180,6 +180,18 @@ Log: (HR: Hit Ratio (HR) NDCG: Normalized Discounted Cumulative Gain)
 E0104 20:03:50.940653 140470332344064 tf_logging.py:110] CRITICAL - Iteration 1: HR = 0.2290, NDCG = 0.1148
 ...
 ```
+# RESULTS
+Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.
+
+
+| Optimization Step | Throughput (Image/sec) | Performance Improvement |
+| :---         |     :---:      |    :---:      |
+|Benchmark   | (ip)     |     |
+| Optimized TensorFlow*     | (ip)       | tbd     |
+| NCF Optimization  | **IP**      | **xxX**      |
+
+# CONCLUSION
+The optimization of TensorFlow* allows for deep-learning models built for this common framework to run several magnitudes faster on Intel® processors to increase scaling and analytical flexibility. The Xeon® processor is designed to scale comfortably to reduce training time of machine learning models. The collaboration between Intel® and Google* engineers to optimize TensorFlow* for higher performance on CPUs is part of ongoing efforts to increase the flexibility of AI applications by running on multiple mediums. Intel® believes the expansion of this accessibility is critical in the development of the next generation of AI models, and our efforts shed light into this by obtaining a projected 5.4x performance improvement with Intel® Xeon® Platinum 8180®. 
 
 
 

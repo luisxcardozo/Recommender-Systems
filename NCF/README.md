@@ -13,7 +13,7 @@ This tutorial will introduce you to CPU performance optimizations for recommenda
 
 
 ### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. xxxX improvement in performance for training on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
+Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. performance improvement for training and inference on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
 
 Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 
@@ -55,6 +55,7 @@ The datasets used are:
 ### Running inference:
 ```
   $ python run_tf_benchmark.py --checkpoint /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ncf_trained_movielens_1m/ --data-location /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ml-1m/ --single-socket --inference-only
+
 
 ## 2. Determining baseline.
 To download the dataset, please install Pandas package first. Then issue the following command:

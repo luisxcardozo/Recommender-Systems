@@ -37,7 +37,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
 
-We will iuse the ML-1m dataset, but the datasets available are: 
+We will use the ML-1m dataset, but the datasets available are: 
 - ml-1m (MovieLens 1 million), composed by 1,000,209 anonymous ratings of roughly 3,706 movies by 6,040 users, ratings are contained in the file "ratings.dat" without header row.
 - ml-20m (MovieLens 20 million), with 20,000,263 ratings of 26,744 movies by 138493 users, ratings are contained in the file "ratings.csv."
 

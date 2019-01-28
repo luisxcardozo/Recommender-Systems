@@ -29,7 +29,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 |HW   | SKX Platinum 8180 CPU @ 2.50 GHz     |
 | Tensorflow   | r1.10, commit id: 958d5d0c6b22ca604363b3fc4547510bede3e3b1    |
 | MKLDNN   | v0.16  |
-| Dataset | BraTS ((http://files.grouplens.org/datasets/movielens/)) |
+| Dataset | MovieLens 1M ((http://files.grouplens.org/datasets/movielens/)) |
 
 
 ## 1. Getting started. 

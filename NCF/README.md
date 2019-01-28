@@ -22,15 +22,12 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 |  |  | 
 | :---         | :---        | 
-|HW   | Xeon Platinum 8180, @2.5G Turbo on, HT on, NUMA     |
-| OS    | CentOS Linux 7 (Core)  kernel 3.10.0-693.el7.x86_64       |
-| Tensorflow   | v1.8rc1, commit id: 2dc7357    |
-| Keras  | v2.1.5      |
-| MKLDNN   | v0.13  |
-| Model	3D-UNet | (https://github.com/ellisdg/3DUnetCNN ) |
-| Dataset | BraTS ((http://www.med.upenn.edu/sbia/brats2017.html)) |
-| CMD (inference)| $python predict.py|
-| BS | 1 |
+|HW   | SKX Platinum 8180 CPU @ 2.50 GHz     |
+| Tensorflow   | r1.10, commit id: 958d5d0c6b22ca604363b3fc4547510bede3e3b1    |
+| MKLDNN   | v0.16  |
+| Model	NCF | (https://github.com/ellisdg/3DUnetCNN ) |
+| Dataset | BraTS ((http://files.grouplens.org/datasets/movielens/)) |
+
 
 ## 1. Getting started.
 Access and download the [MovieLens](http://files.grouplens.org/datasets/movielens/) datasets, and prepare the data for training.
@@ -81,7 +78,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-## Step 4. NCF OPTIMIZATION
+## Step 4. NCF CORE OPTIMIZATION ANALYSIS
 
 Run the launch_benchmark.py script with the appropriate parameters.
 ```

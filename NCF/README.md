@@ -1,17 +1,21 @@
 
 # OPTIMIZATION OF RECOMMENDATION SYSTEM WITH NEURAL COLLABORATIVE FILTERING FOR CPU IN TENSORFLOW
+Bhavani Subramanian<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Luis Cardozo<sup>2</sup>
+
+- 1 - Developer Product Division Machine Learning Translator - Shangai, Intel
+- 2 - Artificial Intelligence Center For Excellence at Intel – Santa Clara, TCS
 
 ## GOAL
 This tutorial will introduce you to CPU performance optimizations for recommendation systems with Neural Collaborative Filtering and provide performance improvements by:
 
 - Means to optimize Tensorflow* to run faster on CPU;
-- Ways to eliminate technology driven bottlenecks with Neural Collaborative Filtering;
+- Ways to eliminate technology driven bottlenecks via thread optimizations;
 
 
 ### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. xxxX improvement in performance for training on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. Current implementation is based on the code from the authors' NCF code and the Stanford implementation in the MLPerf Repo.
+Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. xxxX improvement in performance for training on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
 
-Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities within the model’s sections. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
+Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 
 
 KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recommender Systems, Tensorflow Optimization,
@@ -25,7 +29,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 |HW   | SKX Platinum 8180 CPU @ 2.50 GHz     |
 | Tensorflow   | r1.10, commit id: 958d5d0c6b22ca604363b3fc4547510bede3e3b1    |
 | MKLDNN   | v0.16  |
-| Model	NCF | (https://github.com/ellisdg/3DUnetCNN ) |
+| Model	NCF | (___) |
 | Dataset | BraTS ((http://files.grouplens.org/datasets/movielens/)) |
 
 
@@ -37,6 +41,20 @@ The datasets used are:
 - ml-20m (MovieLens 20 million), with 20,000,263 ratings of 26,744 movies by 138493 users, ratings are contained in the file "ratings.csv."
 
 (In both cases, timestamps are represented in seconds starting midnight Coordinated Universal Time (UTC) of January 1, 1970. Each user has at least 20 ratings)
+
+### Install prerequisites:
+* Python 2.7
+* Follow instructions from https://github.com/NervanaSystems/tensorflow-models/tree/master/official#requirements for installing the requirements
+
+### Clone repository:
+```
+  $ git clone https://github.com/NervanaSystems/tensorflow-models.git -b bhavanis/ncf
+  $ cd tensorflow-models/
+```
+
+### Running inference:
+```
+  $ python run_tf_benchmark.py --checkpoint /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ncf_trained_movielens_1m/ --data-location /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ml-1m/ --single-socket --inference-only
 
 ## 2. Determining baseline.
 To download the dataset, please install Pandas package first. Then issue the following command:

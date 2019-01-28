@@ -94,7 +94,8 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
      - Also, AFAIK VTune uses a sampling frequency of 10ms
 2. Approaches to determine hotspots:
    - Cycle accounting using SEP or a bigger dataset (ex. MovieLens-20m)
-* (When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance) *
+
+*(When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance)*
 ![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 ```
 #### For Throughput:

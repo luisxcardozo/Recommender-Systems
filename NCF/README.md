@@ -2,7 +2,7 @@
 # OPTIMIZATION OF RECOMMENDATION SYSTEM WITH NEURAL COLLABORATIVE FILTERING FOR CPU IN TENSORFLOW
 Bhavani Subramanian<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Luis Cardozo<sup>2</sup>
 
-- 1 - Developer Product Division Machine Learning Translator - Shangai, Intel
+- 1 - Department Name - Oregon, Intel
 - 2 - Artificial Intelligence Center For Excellence at Intel – Santa Clara, TCS
 
 ## GOAL

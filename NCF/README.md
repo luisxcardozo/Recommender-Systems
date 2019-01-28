@@ -97,109 +97,19 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 *(When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance)*
 ![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
-```
-#### For Throughput:
-- batch-size 256, 
-- socket-id 0, 
-- checkpoint, and
-- model-source-dir
-```
-$ python launch_benchmark.py \
-    --checkpoint /home/myuser/ncf_fp32_pretrained_model \
-    --model-source-dir /home/myuser/tensorflow/models \
-    --model-name ncf \
-    --socket-id 0 \
-    --batch-size 256 \
-    --framework tensorflow \
-    --precision fp32 \
-    --mode inference \
-    --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl
-```
-Tail of Throughput log:
-```
-...
-2018-11-12 19:42:44.851050: step 22900, 931259.2 recommendations/sec, 0.27490 msec/batch
-2018-11-12 19:42:44.880778: step 23000, 855571.2 recommendations/sec, 0.29922 msec/batch
-2018-11-12 19:42:44.910551: step 23100, 870836.8 recommendations/sec, 0.29397 msec/batch
-2018-11-12 19:42:44.940675: sE1112 19:42:45.420336 140101437536000 tf_logging.py:110] CRITICAL - Iteration 1: HR = 0.2248, NDCG = 0.1132
-tep 23200, 867319.7 recommendations/sec, 0.29516 msec/batch
-2018-11-12 19:42:44.971828: step 23300, 867319.7 recommendations/sec, 0.29516 msec/batch
-2018-11-12 19:42:45.002699: step 23400, 861751.1 recommendations/sec, 0.29707 msec/batch
-2018-11-12 19:42:45.033635: step 23500, 873671.1 recommendations/sec, 0.29302 msec/batch
-Average recommendations/sec across 23594 steps: 903932.8 (0.28381 msec/batch)
-...
-```
-#### Latency:
-- batch-size 1, 
-- socket-id 0, 
-- checkpoint, and
-- model-source-dir
 
-```
-$ python launch_benchmark.py \
-    --checkpoint /home/myuser/ncf_fp32_pretrained_model \
-    --model-source-dir /home/myuser/tensorflow/models \
-    --model-name ncf \
-    --socket-id 0 \
-    --batch-size 1 \
-    --framework tensorflow \
-    --precision fp32 \
-    --mode inference \
-    --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl
-```
-Latency log:
-
-```
-...
-2018-11-12 20:24:24.986641: step 6039100, 4629.5 recommendations/sec, 0.21601 msec/batch
-2018-11-12 20:24:25.010239: step 6039200, 4369.1 recommendations/sec, 0.22888 msec/batch
-2018-11-12 20:24:25.033854: step 6039300, 4583.9 recommendations/sec, 0.21815 msec/batch
-2018-11-12 20:24:25.057516: step 6039400, 4696.9 recommendations/sec, 0.21291 msec/batch
-2018-11-12 20:24:25.080979: step 6039500, 4788.0 recommendations/sec, 0.20885 msec/batch
-2018-11-12 20:24:25.104498: step 6039600, 4405.8 recommendations/sec, 0.22697 msec/batch
-2018-11-12 20:24:25.128331: step 6039700, 4364.5 recommendations/sec, 0.22912 msec/batch
-2018-11-12 20:24:25.151892: step 6039800, 4485.9 recommendations/sec, 0.22292 msec/batch
-2018-11-12 20:24:25.175342: step 6039900, 4675.9 recommendations/sec, 0.21386 msec/batch
-2018-11-12 20:24:25.198717: step 6040000, 4905.6 recommendations/sec, 0.20385 msec/batch
-Average recommendations/sec across 6040001 steps: 4573.0 (0.21920 msec/batch)
-...
-```
-#### Accuracy
-- batch-size 256,
-- socket-id 0, 
-- checkpoint path, and 
-- model-source-dir
-```
-$ python launch_benchmark.py \
-    --checkpoint /home/myuser/ncf_fp32_pretrained_model \
-    --model-source-dir /home/myuser/tensorflow/models \
-    --model-name ncf \
-    --socket-id 0 \
-    --accuracy-only \
-    --batch-size 256 \
-    --framework tensorflow \
-    --precision fp32 \
-    --mode inference \
-    --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl
-```
-Log: (HR: Hit Ratio (HR) NDCG: Normalized Discounted Cumulative Gain)
-```
-...
-E0104 20:03:50.940653 140470332344064 tf_logging.py:110] CRITICAL - Iteration 1: HR = 0.2290, NDCG = 0.1148
-...
-```
 # RESULTS
 Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.
 
 
-| Optimization Step | Throughput (Image/sec) | Performance Improvement |
+| Batch Size | Throughput (recommendations/sec) | Average Latency (ms/batch) |
 | :---         |     :---:      |    :---:      |
-|Baseline   | (ip)     |     |
-| Optimized TensorFlow*     | (ip)       | tbd     |
-| NCF Optimization  | **IP**      | **xxX**      |
+|256 (default)   | 1,625,439     | 0.354    |
+| 512     | 3,052,243       | 0.338     |
+
 
 # CONCLUSION
-The optimization of TensorFlow* allows for deep-learning models built for this common framework to run several magnitudes faster on Intel® processors to increase scaling and analytical flexibility. The Xeon® processor is designed to scale comfortably to reduce training time of machine learning models. The collaboration between Intel® and Google* engineers to optimize TensorFlow* for higher performance on CPUs is part of ongoing efforts to increase the flexibility of AI applications by running on multiple mediums. Intel® believes the expansion of this accessibility is critical in the development of the next generation of AI models, and our efforts shed light into this by obtaining a xx.xX performance improvement with Intel® Xeon® Platinum 8180®. 
+The optimization of TensorFlow* allows for deep-learning models built for this common framework to run several magnitudes faster on Intel® processors to increase scaling and analytical flexibility. The Xeon® processor is designed to scale comfortably to reduce training time of machine learning models. The collaboration between Intel® and Google* engineers to optimize TensorFlow* for higher performance on CPUs is part of ongoing efforts to increase the flexibility of AI applications by running on multiple mediums. Intel® believes the expansion of this accessibility is critical in the development of the next generation of AI models, and our efforts shed light into this by obtaining increased performance with Intel® Xeon® Platinum 8180®. 
 
 
 

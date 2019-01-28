@@ -29,14 +29,13 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 |HW   | SKX Platinum 8180 CPU @ 2.50 GHz     |
 | Tensorflow   | r1.10, commit id: 958d5d0c6b22ca604363b3fc4547510bede3e3b1    |
 | MKLDNN   | v0.16  |
-| Model	NCF | (___) |
 | Dataset | BraTS ((http://files.grouplens.org/datasets/movielens/)) |
 
 
 ## 1. Getting started. 
 (these instructions describe how to access the dataset and the process of installing the necessary prerequisites as well as running the NCF model)
 
-Access and download the [MovieLens](http://files.grouplens.org/datasets/movielens/) datasets, and prepare the data for training.
+Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
 
 The datasets used are: 
 - ml-1m (MovieLens 1 million), composed by 1,000,209 anonymous ratings of roughly 3,706 movies by 6,040 users, ratings are contained in the file "ratings.dat" without header row.
@@ -75,23 +74,8 @@ Arguments:
 ```
 Use the --help or -h flag to get a full list of possible arguments.
 
-Note the ml-20m dataset is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
+If you prefer to run the ml-20m dataset, note that it is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 
-### To train and evaluate the model, issue the following command:
-```
-python ncf_main.py
-```
-Arguments:
-```
---model_dir: ( default - /tmp/ncf/)
-```
-```
---data_dir: (This should be set to the same directory given to the data_download's data_dir argument.)
-```
-```
---dataset: (default - it is ml-1m)
-```
-For additional arguments for models and training process use the --help or -h flag to get a full list, with detailed descriptions.
 
 ## Step 3. Optimizing TensorFlow* for CPU.  
 (*PERFORMANCE OPTIMIZATION*)
@@ -102,12 +86,16 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 ## Step 4. NCF CORE OPTIMIZATION ANALYSIS
 
-Run the launch_benchmark.py script with the appropriate parameters.
-```
---model-source-dir - (path to official tensorflow model)
-```
-```
---checkpoint - (path to checkpoint directory for the Pre-trained model)
+<space><space>*<space>BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
+<space><space>*<space>Timeline and VTune profiles unreliable
+<space><space><space>*<space>Overall time reported by timeline is waygreater (50x) than actual time
+<space><space><space><space>*<space>Timeline tool’s own overhead
+<space><space><space>*<space>VTune crashes
+<space><space><space><space>*<space>Also, AFAIK VTune uses a sampling frequency of 10ms
+<space><space>*<space>Approaches to determine hotspots:
+<space><space><space>*<space>Cycle accounting using SEP		(OR)Use a bigger dataset (ex. MovieLens-20m)
+* (When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance) *
+![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 ```
 #### For Throughput:
 - batch-size 256, 

@@ -35,6 +35,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 ## 1. Getting started. 
 (these instructions describe how to access the dataset and the process of installing the necessary prerequisites as well as running the NCF model)
+
 Access and download the [MovieLens](http://files.grouplens.org/datasets/movielens/) datasets, and prepare the data for training.
 
 The datasets used are: 

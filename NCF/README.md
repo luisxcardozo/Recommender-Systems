@@ -87,13 +87,13 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 ## Step 4. NCF CORE OPTIMIZATION ANALYSIS
 
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
-   - Timeline and VTune profiles unreliable
-   - Overall time reported by timeline is waygreater (50x) than actual time
+2. Timeline and VTune profiles unreliable
+   - Overall time reported by timeline is greater (50x) than actual time
      - Timeline tool’s own overhead
    - VTune crashes
-     - Also, AFAIK VTune uses a sampling frequency of 10ms
+     - Also, AFAIK VTune uses a sampling frequency of 10ms
 2. Approaches to determine hotspots:
-   - Cycle accounting using SEP		(OR)Use a bigger dataset (ex. MovieLens-20m)
+   - Cycle accounting using SEP or a bigger dataset (ex. MovieLens-20m)
 * (When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance) *
 ![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 ```

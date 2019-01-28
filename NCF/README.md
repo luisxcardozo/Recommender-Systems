@@ -44,17 +44,17 @@ We will use the ML-1m dataset, but the datasets available are:
 (In both cases, timestamps are represented in seconds starting midnight Coordinated Universal Time (UTC) of January 1, 1970. Each user has at least 20 ratings)
 
 
-  ## Install prerequisites:
+ ## Install prerequisites:
 * Python 2.7
 * Follow instructions from https://github.com/NervanaSystems/tensorflow-models/tree/master/official#requirements for installing the requirements
 
-  ## Clone repository:
+ ## Clone repository:
 ```
   $ git clone https://github.com/NervanaSystems/tensorflow-models.git -b bhavanis/ncf
   $ cd tensorflow-models/
 ```
 
-  ## Running inference:
+ ## Running inference:
 ```
   $ python run_tf_benchmark.py --checkpoint /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ncf_trained_movielens_1m/ --data-location /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ml-1m/ --single-socket --inference-only
 ```

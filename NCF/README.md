@@ -33,7 +33,8 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 | Dataset | BraTS ((http://files.grouplens.org/datasets/movielens/)) |
 
 
-## 1. Getting started.
+## 1. Getting started. 
+(these instructions describe how to access the dataset and the process of installing the necessary prerequisites as well as running the NCF model)
 Access and download the [MovieLens](http://files.grouplens.org/datasets/movielens/) datasets, and prepare the data for training.
 
 The datasets used are: 
@@ -42,20 +43,21 @@ The datasets used are:
 
 (In both cases, timestamps are represented in seconds starting midnight Coordinated Universal Time (UTC) of January 1, 1970. Each user has at least 20 ratings)
 
-### Install prerequisites:
+
+  ## Install prerequisites:
 * Python 2.7
 * Follow instructions from https://github.com/NervanaSystems/tensorflow-models/tree/master/official#requirements for installing the requirements
 
-### Clone repository:
+  ## Clone repository:
 ```
   $ git clone https://github.com/NervanaSystems/tensorflow-models.git -b bhavanis/ncf
   $ cd tensorflow-models/
 ```
 
-### Running inference:
+  ## Running inference:
 ```
   $ python run_tf_benchmark.py --checkpoint /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ncf_trained_movielens_1m/ --data-location /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ml-1m/ --single-socket --inference-only
-
+```
 
 ## 2. Determining baseline.
 To download the dataset, please install Pandas package first. Then issue the following command:

@@ -79,7 +79,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 
 ### <p align="center">When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance
-<p align="center">![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
+!<p align="center">[Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 
 # RESULTS
 Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.

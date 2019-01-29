@@ -87,7 +87,7 @@ Our engineers designed the elimination of inefficiencies in stages. Results show
 
 | Cores | Throughput (recommendations/sec) | Performance Improvement |
 | :---         |     :---:      |    :---:      |
-|28 (default)   | 648,239.1     |    |
+|28 (default)   | 648,239     |    |
 | 11     | 1,526,122       | **2.4X**     |
 
 

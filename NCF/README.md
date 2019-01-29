@@ -67,7 +67,7 @@ If you prefer to run the ml-20m dataset, note that it is large (the rating file 
 
 
 ## Step 3. Optimizing TensorFlow* for CPU.  
-(*PERFORMANCE OPTIMIZATION*)
+Optimize TensorFlow* for CPU.
 
 Intel developed specialized primitives libraries that increase Deep Neural Network model performance. This performance boost can be installed from Anaconda* or from the Intel® channel and run on Linux*, and on Windows* or OS*. 
 

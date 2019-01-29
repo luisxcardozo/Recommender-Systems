@@ -22,7 +22,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 ### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/NCF_Bacground.md)
 
-#### Evaluation Environment (*INCLUDE OBJECT*)
+#### Evaluation Environment
 
 |  |  | 
 | :---         | :---        | 

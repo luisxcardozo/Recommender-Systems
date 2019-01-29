@@ -13,7 +13,7 @@ This tutorial will introduce you to CPU performance optimizations for recommenda
 
 
 ### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. performance improvement for training and inference on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
+Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. performance improvement for inference on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
 
 Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 
@@ -61,20 +61,9 @@ We will use the ML-1m dataset, but the datasets available are:
 
 ## 2. Determining baseline.
 To download the dataset, please install Pandas package first. Then issue the following command:
+[Instructions to train and evaluate model](https://github.com/tensorflow/models/tree/master/official/recommendation#train-and-evaluate-model) 
 
-```
-python ../datasets/movielens.py
-```
-Arguments:
- ```
---data_dir: (default - /tmp/movielens-data/ 0
- ```
-```
---dataset: (default - it is ml-1m)
-```
-Use the --help or -h flag to get a full list of possible arguments.
-
-If you prefer to run the ml-20m dataset, note that it is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
+Note - If you prefer to run the ml-20m dataset, note that it is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 
 
 ## Step 3. Optimizing TensorFlow* for CPU.  
@@ -87,15 +76,9 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 ## Step 4. NCF CORE OPTIMIZATION ANALYSIS
 
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
-2. Timeline and VTune profiles unreliable
-   - Overall time reported by timeline is greater (50x) than actual time
-     - Timeline tool’s own overhead
-   - VTune crashes
-     - Also, AFAIK VTune uses a sampling frequency of 10ms
-2. Approaches to determine hotspots:
-   - Cycle accounting using SEP or a bigger dataset (ex. MovieLens-20m)
 
-*(When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance)*
+
+### <p align="center">When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance
 ![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 
 # RESULTS

@@ -13,7 +13,7 @@ This tutorial will introduce you to CPU performance optimizations for recommenda
 
 
 ### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. performance improvement for inference on Intel® 8180 against an unoptimized run by solving bottlenecks with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
+Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. 2.4X performance improvement for inference on Intel® 8180 against an unoptimized run by solving core optimizations with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
 
 Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 
@@ -85,10 +85,10 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.
 
 
-| Batch Size | Throughput (recommendations/sec) | Average Latency (ms/batch) |
+| Cores | Throughput (recommendations/sec) | Performance Improvement |
 | :---         |     :---:      |    :---:      |
-|256 (default)   | 1,625,439     | 0.354    |
-| 512     | 3,052,243       | 0.338     |
+|28 (default)   | 648,239.1     |    |
+| 11     | 1,526,122       | **2.4X**     |
 
 
 # CONCLUSION

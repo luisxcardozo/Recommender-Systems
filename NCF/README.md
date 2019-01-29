@@ -8,8 +8,8 @@
 ## GOAL
 Learn CPU performance optimizations for recommendation systems with Neural Collaborative Filtering by:
 
-- Means to optimize Tensorflow* to run faster on CPU;
-- Ways to eliminate technology driven bottlenecks via thread optimizations;
+- Optimizing Tensorflow* to run faster on CPU;
+- Eliminating technology driven bottlenecks via thread optimizations;
 
 
 ### ABSTRACT  

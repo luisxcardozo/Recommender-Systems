@@ -61,7 +61,7 @@ We will use the ML-1m dataset, but the datasets available are:
 
 ## 2. Determining baseline.
 
-[Instructions to train and evaluate model](https://github.com/tensorflow/models/tree/master/official/recommendation#train-and-evaluate-model) 
+[Instructions to download, preprocess, train, and evaluate model](https://github.com/tensorflow/models/tree/master/official/recommendation#train-and-evaluate-model) 
 
 If you prefer to run the ml-20m dataset, note that it is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 

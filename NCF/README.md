@@ -6,14 +6,14 @@
 - 2 - Artificial Intelligence Center For Excellence at Intel – Santa Clara, TCS
 
 ## GOAL
-This tutorial will introduce you to CPU performance optimizations for recommendation systems with Neural Collaborative Filtering and provide performance improvements by:
+Learn CPU performance optimizations for recommendation systems with Neural Collaborative Filtering by:
 
 - Means to optimize Tensorflow* to run faster on CPU;
 - Ways to eliminate technology driven bottlenecks via thread optimizations;
 
 
 ### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Neural Collaborative Filtering, on Intel® Xeon® processor-based platforms. 2.4X performance improvement for inference on Intel® 8180 against an unoptimized run by solving core optimizations with Neural Collaborative Filtering (NCF) framework with Neural Matrix Factorization (NeuMF) model as described in the Neural Collaborative Filtering paper. 
+2.4X performance improvement for inference on Intel® 8180 for recommender systems with Neural Collaborative Filtering, by reviewing bottleneck opportunities with thread-optimization analysis and Tensorflow* for CPU optimization. 
 
 Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 

@@ -73,7 +73,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-## Step 4. NCF CORE OPTIMIZATION ANALYSIS
+## Step 4. NCF CORE OPTIMIZATION ANALYSIS RESULTS
 
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
 

@@ -15,7 +15,7 @@ Learn CPU performance optimizations for recommendation systems with Neural Colla
 ### ABSTRACT  
 2.4X performance improvement for inference on Intel® 8180 for recommender systems with Neural Collaborative Filtering, by reviewing bottleneck opportunities with thread-optimization analysis and Tensorflow* for CPU optimization. 
 
-Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities with thread-optimization analysis. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
+Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
 
 
 KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recommender Systems, Tensorflow Optimization,

@@ -41,6 +41,14 @@ KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Ten
 
 
 ## Step 1. Getting started.
+
+[Download Tensorflow](https://github.com/tensorflow/tensorflow/releases?after=v1.10.1) 
+*(v1.8 located in second page)*
+
+You can skip Step 2 by directly [optimizing TensorFlow* for CPU.](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
+
+   
+
 [Download models and datasets (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
 
 Download the following files: 

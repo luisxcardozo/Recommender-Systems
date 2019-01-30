@@ -77,7 +77,7 @@ If you prefer to run the ml-20m dataset, note that it is large (the rating file 
 
 The command line in the *"Running Inference"* step above provides the optimal thread number as output.
 
-\
+  
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
 
 

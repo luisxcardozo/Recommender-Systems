@@ -16,6 +16,8 @@ Models’ performance is improved by leveraging Intel®’s highly optimized mat
 KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Tensorflow Optimization,
 
 ### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/WD_Background.md)
+[Introduction to Wide & Deep (with various applications and tutorials](https://github.com/tensorflow/models/tree/master/official/wide_deep)
+
 
 #### Evaluation Environment (*INCLUDE OBJECT*)
 
@@ -32,14 +34,14 @@ KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Ten
 | BS | 1 |
 
 
-## 1. Getting started.
+## Step 1. Getting started.
 Access and download the [Census Income]( https://archive.ics.uci.edu/ml/datasets/Census+Income) dataset, and prepare the data for training.
 
 Download the following files: 
 - adult.data, and 
 - adult.test
 
-## 2. Determining baseline.
+## Step 2. Determining baseline.
 
 ### For latency mode with: --batch-size = 1
  ```

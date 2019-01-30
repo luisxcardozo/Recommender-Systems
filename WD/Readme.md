@@ -1,6 +1,6 @@
 
 #  <p align="center">OPTIMIZATION OF RECOMMENDATION SYSTEM WITH WIDE AND DEEP METHOD FOR CPU IN TENSORFLOW
-<p align="center">Wei Wang<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Kevin Bryan<sup>2</sup>, Luis Cardozo<sup>2</sup>
+<p align="center">Wei Wang<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Luis Cardozo<sup>2</sup>
 
 - 1 - Department - Location, Intel
 - 2 - Artificial Intelligence Center For Excellence at Intel – Santa Clara, TCS

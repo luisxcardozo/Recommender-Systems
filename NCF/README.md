@@ -12,7 +12,7 @@ Learn CPU performance optimizations for recommendation systems with Neural Colla
 - Eliminating technology driven bottlenecks via thread optimizations;
 
 
-### ABSTRACT  
+## ABSTRACT  
 2.4X performance improvement for inference on Intel® 8180 for recommender systems with Neural Collaborative Filtering, with thread-optimization analysis and Tensorflow* for CPU optimization. 
 
 Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount like in the bio-med industry.
@@ -33,7 +33,6 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 
 ## Step 1. Getting started. 
-(these instructions describe how to access the dataset and the process of installing the necessary prerequisites as well as running the NCF model)
 
 Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
 
@@ -73,7 +72,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-## Step 4. NCF CORE OPTIMIZATION ANALYSIS RESULTS
+## Step 4. NCF Thread Optimization Analysis Results
 
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
 
@@ -81,7 +80,7 @@ Intel developed specialized primitives libraries that increase Deep Neural Netwo
 ### <p align="center">When OMP_NUM_THREADS was varied from 1 through 28, 11 yielded the best performance
 ![Thread_Iptimization](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/Thread_Optimization.png)
 
-# RESULTS
+## RESULTS
 Our engineers designed the elimination of inefficiencies in stages. Results shown in the following table.
 
 
@@ -91,7 +90,7 @@ Our engineers designed the elimination of inefficiencies in stages. Results show
 | 11     | 1,526,122       | **2.4X**     |
 
 
-# CONCLUSION
+## CONCLUSION
 The optimization of TensorFlow* allows for deep-learning models built for this common framework to run several magnitudes faster on Intel® processors to increase scaling and analytical flexibility. The Xeon® processor is designed to scale comfortably to reduce training time of machine learning models. The collaboration between Intel® and Google* engineers to optimize TensorFlow* for higher performance on CPUs is part of ongoing efforts to increase the flexibility of AI applications by running on multiple mediums. Intel® believes the expansion of this accessibility is critical in the development of the next generation of AI models, and our efforts shed light into this by obtaining increased performance with Intel® Xeon® Platinum 8180®. 
 
 

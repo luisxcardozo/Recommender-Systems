@@ -22,7 +22,7 @@ Intel®’s primitives library is called Intel® Math Kernel Library for Deep Ne
 KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Tensorflow Optimization,
 
 ### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/WD_Background.md)
-[Introduction to Wide & Deep (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
+
 
 
 #### Evaluation Environment (*INCLUDE OBJECT*)
@@ -41,78 +41,20 @@ KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Ten
 
 
 ## Step 1. Getting started.
-Access and download the [Census Income]( https://archive.ics.uci.edu/ml/datasets/Census+Income) dataset, and prepare the data for training.
+[download models and datasets (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
 
 Download the following files: 
 - adult.data, and 
 - adult.test
 
-## Step 2. Determining baseline.
-
-### For latency mode with: --batch-size = 1
- ```
- $ cd /home/myuser/models/benchmarks
-
-$ python launch_benchmark.py \ 
-      --framework tensorflow \ 
-      --model-source-dir /home/myuser/path/to/tensorflow-models \
-      --precision fp32 \
-      --mode inference \
-      --model-name wide_deep \
-      --batch-size 1 \
-      --data-location /home/myuser/path/to/dataset \
-      --checkpoint /home/myuser/path/to/checkpoint \
-      --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl \
-      --verbose
- ```
-### For throughput mode with: --batch-size = 1024
- ```
- $ python launch_benchmark.py \ 
-      --framework tensorflow \ 
-      --model-source-dir /home/myuser/path/to/tensorflow-models \
-      --precision fp32 \
-      --mode inference \
-      --model-name wide_deep \
-      --batch-size 1024 \
-      --data-location /home/myuser/path/to/dataset \
-      --checkpoint /home/myuser/path/to/checkpoint \
-      --docker-image intelaipg/intel-optimized-tensorflow:latest-devel-mkl \
-      --verbose
- ``` 
-### Log file is saved to: models/benchmarks/common/tensorflow/logs
-
-### Tail of log
- ``` 
-accuracy: 1.0
-accuracy_baseline: 1.0
-auc: 1.0
-auc_precision_recall: 0.0
-average_loss: 2.1470942e-05
-global_step: 9775
-label/mean: 0.0
-loss: 2.1470942e-05
-precision: 0.0
-prediction/mean: 2.1461743e-05
-recall: 0.0
-End-to-End duration is %s 36.5971579552
-Latency is: %s 0.00224784460139
-lscpu_path_cmd = command -v lscpu
-lscpu located here: /usr/bin/lscpu
-current path: /workspace/benchmarks
-search path: /workspace/benchmarks/*/tensorflow/wide_deep/inference/fp32/model_init.py
-Using model init: /workspace/benchmarks/classification/tensorflow/wide_deep/inference/fp32/model_init.py
-PYTHONPATH: :/workspace/models
-RUNCMD: python common/tensorflow/run_tf_benchmark.py         --framework=tensorflow         --model-name=wide_deep         --precision=fp32         --mode=inference         --model-source-dir=/workspace/models         --intelai-models=/workspace/intelai_models         --batch-size=1                  --data-location=/dataset         --checkpoint=/checkpoints
- ``` 
-
-## Step 3. Optimizing TensorFlow* for CPU.  
+## Step 2. Optimizing TensorFlow* for CPU.  
 (*PERFORMANCE OPTIMIZATION*)
 <img align="right" width="359" height="82" src="https://github.com/luisxcardozo/Image-Segmentation/blob/master/ISBackground/Step_three.PNG"> 
 Intel developed specialized primitives libraries that increase Deep Neural Network model performance. This performance boost can be installed from Anaconda* or from the Intel® channel and run on Linux*, and on Windows* or OS*. 
 
 - [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-## Step 4. WD OPTIMIZATION
+## Step 3. WD OPTIMIZATION
 
 (ip)
 

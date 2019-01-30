@@ -13,9 +13,9 @@ Learn CPU performance optimizations for recommendation systems with Neural Colla
 
 
 ### ABSTRACT  
-2.4X performance improvement for inference on Intel® 8180 for recommender systems with Neural Collaborative Filtering, by reviewing bottleneck opportunities with thread-optimization analysis and Tensorflow* for CPU optimization. 
+2.4X performance improvement for inference on Intel® 8180 for recommender systems with Neural Collaborative Filtering, with thread-optimization analysis and Tensorflow* for CPU optimization. 
 
-Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
+Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount like in the bio-med industry.
 
 
 KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recommender Systems, Tensorflow Optimization,
@@ -32,7 +32,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 | Dataset | MovieLens 1M (http://files.grouplens.org/datasets/movielens/) |
 
 
-## 1. Getting started. 
+## Step 1. Getting started. 
 (these instructions describe how to access the dataset and the process of installing the necessary prerequisites as well as running the NCF model)
 
 Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
@@ -59,7 +59,7 @@ We will use the ML-1m dataset, but the datasets available are:
   $ python run_tf_benchmark.py --checkpoint /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ncf_trained_movielens_1m/ --data-location /mnt/aipg_tensorflow_shared/validation/dataset/q3models/ncf/ml-1m/ --single-socket --inference-only
 ```
 
-## 2. Determining baseline.
+## Step 2. Determining baseline.
 
 [Instructions to download, preprocess, train, and evaluate model](https://github.com/tensorflow/models/tree/master/official/recommendation#train-and-evaluate-model) 
 

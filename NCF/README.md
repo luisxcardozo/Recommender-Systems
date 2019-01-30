@@ -34,12 +34,13 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 ## Step 1. Getting started. 
 
-[Download Tensorflow](https://github.com/tensorflow/tensorflow/releases?after=v1.10.1) 
-*(v1.8 located in second page)*
+Download CPU optimized Tensorflow from:
+- [Guide]((https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide), or 
+- [Build](https://github.com/tensorflow/tensorflow/#community-supported-builds) *(Linux CPU with Intel® MKL-DNN Nightly)*
 
-You can skip Step 2 by directly [optimizing TensorFlow* for CPU.](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
-Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
+
+Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets.
 
 We will use the ML-1m dataset, but the datasets available are: 
 - ml-1m (MovieLens 1 million), composed by 1,000,209 anonymous ratings of roughly 3,706 movies by 6,040 users, ratings are contained in the file "ratings.dat" without header row.
@@ -50,8 +51,8 @@ We will use the ML-1m dataset, but the datasets available are:
 
  ### Install prerequisites:
 * Python 2.7
-* Follow instructions from https://github.com/NervanaSystems/tensorflow-models/tree/master/official#requirements for installing the requirements
-
+* [Installing requirements
+ instructions](https://github.com/NervanaSystems/tensorflow-models/tree/master/official#requirements)
  ### Clone repository:
 ```
   $ git clone https://github.com/NervanaSystems/tensorflow-models.git -b bhavanis/ncf
@@ -70,14 +71,10 @@ We will use the ML-1m dataset, but the datasets available are:
 If you prefer to run the ml-20m dataset, note that it is large (the rating file is ~500 MB), and it may take several minutes (~2 mins) for data preprocessing. Both the ml-1m and ml-20m datasets will be coerced into a common format when downloaded.
 
 
-## Step 3. Optimizing TensorFlow* for CPU.  
-Optimize TensorFlow* for CPU.
 
-Intel developed specialized primitives libraries that increase Deep Neural Network model performance. This performance boost can be installed from Anaconda* or from the Intel® channel and run on Linux*, and on Windows* or OS*. 
+## Step 3. NCF Thread Optimization Analysis Results
 
-- [Guide: Intel® Optimization for TensorFlow* Installation Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
-
-## Step 4. NCF Thread Optimization Analysis Results
+The command line in the *"Running Inference"* step above provide the optimal thread number as output
 
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
 

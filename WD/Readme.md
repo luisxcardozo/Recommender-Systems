@@ -1,16 +1,22 @@
 
-# OPTIMIZATION OF RECOMMENDATION SYSTEM WITH WIDE AND DEEP METHOD FOR CPU IN TENSORFLOW
+#  <p align="center">OPTIMIZATION OF RECOMMENDATION SYSTEM WITH WIDE AND DEEP METHOD FOR CPU IN TENSORFLOW
+<p align="center">Wei Wang<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Kevin Bryan<sup>2</sup>, Luis Cardozo<sup>2</sup>
+
+- 1 - Department - Location, Intel
+- 2 - Artificial Intelligence Center For Excellence at Intel – Santa Clara, TCS
+
+
 
 ## GOAL
-This tutorial will introduce you to CPU performance optimizations for recommendation systems with Wide And Deep and provide performance improvements by:
+Learn CPU performance optimizations for income predictions with Wide & Deep optimizations by:
+1.	Optimizing Tensorflow* to run faster on CPU;
+2.	Eliminating technology driven bottlenecks.
 
-- Means to optimize Tensorflow* to run faster on CPU;
-- Ways to eliminate technology driven bottlenecks with Wide and Deep.
+### ABSTRACT
 
+XX.Xx improvement on inference performance on Intel® 8180 by solving architecture bottlenecks by leveraging Intel®’s highly optimized math routines for deep learning and Tensorflow* CPU optimization.
 
-### ABSTRACT  
-Tensorflow* CPU optimization for recommender systems with Wide and Deep, on Intel® Xeon® processor-based platforms. xxxX improvement in performance for training on Intel® 8180 against an unoptimized run.
-Models’ performance is improved by leveraging Intel®’s highly optimized math routines for deep learning. This primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities within the model’s sections. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements, especially where accuracy minimization is paramount, like in the bio-med industry.
+Intel®’s primitives library is called Intel® Math Kernel Library for Deep Neural Networks (MKL-DNN) and includes convolution, normalization, activation and inner product, and other primitives, and by reviewing bottleneck opportunities within the model’s sections. These steps are highly relevant as recent academic articles predict the development of non-static neural networks that increase memory and computational requirements.
 
 
 KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Tensorflow Optimization,

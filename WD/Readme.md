@@ -16,7 +16,7 @@ Models’ performance is improved by leveraging Intel®’s highly optimized mat
 KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Tensorflow Optimization,
 
 ### [BACKGROUND AND ARCHITECTURE](https://github.com/luisxcardozo/Recommender-Systems/blob/master/data/WD_Background.md)
-[Introduction to Wide & Deep (with various applications and tutorials](https://github.com/tensorflow/models/tree/master/official/wide_deep)
+[Introduction to Wide & Deep (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
 
 
 #### Evaluation Environment (*INCLUDE OBJECT*)

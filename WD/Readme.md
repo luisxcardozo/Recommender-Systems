@@ -41,7 +41,7 @@ KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Ten
 
 
 ## Step 1. Getting started.
-[download models and datasets (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
+[Download models and datasets (*with various applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
 
 Download the following files: 
 - adult.data, and 

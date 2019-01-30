@@ -31,7 +31,8 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 | MKLDNN   | v0.16  |
 | Dataset | MovieLens 1M (http://files.grouplens.org/datasets/movielens/) |
 
-\
+  
+    
 ## Step 1. Getting started. 
 
 Download CPU optimized Tensorflow from:

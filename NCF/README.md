@@ -34,6 +34,11 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 
 ## Step 1. Getting started. 
 
+[Download Tensorflow](https://github.com/tensorflow/tensorflow/releases?after=v1.10.1) 
+*(v1.8 located in second page)*
+
+You can skip Step 2 by directly [optimizing TensorFlow* for CPU.](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
+
 Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets..
 
 We will use the ML-1m dataset, but the datasets available are: 

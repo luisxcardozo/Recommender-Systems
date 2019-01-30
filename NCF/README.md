@@ -31,7 +31,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
 | MKLDNN   | v0.16  |
 | Dataset | MovieLens 1M (http://files.grouplens.org/datasets/movielens/) |
 
-
+\
 ## Step 1. Getting started. 
 
 Download CPU optimized Tensorflow from:
@@ -75,7 +75,7 @@ If you prefer to run the ml-20m dataset, note that it is large (the rating file 
 ## Step 3. NCF Thread Optimization Analysis Results
 
 The command line in the *"Running Inference"* step above provides the optimal thread number as output.
-\
+
 \
 1. BS-512, inter-op – 1, intra-op – 11, OMP_NUM_THREADS – 11**
 

@@ -1,5 +1,5 @@
 
-# <p align="center">OPTIMIZATION OF RECOMMENDATION SYSTEM WITH NEURAL COLLABORATIVE FILTERING FOR CPU IN TENSORFLOW
+# <p align="center">OPTIMIZATION OF RECOMMENDATION SYSTEM WITH NEURAL COLLABORATIVE FILTERING FOR CPU IN TENSORFLOW*
 <p align="center">Bhavani Subramanian<sup>1</sup>, Shankar Ratneshwaran<sup>2</sup>, Luis Cardozo<sup>2</sup>
 
 - 1 - AI Deep Learning Algorithms - Oregon, Intel

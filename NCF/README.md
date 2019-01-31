@@ -35,10 +35,7 @@ KEYWORDS. Convolutional Neural Networks, Neural Collaborative Filtering, Recomme
     
 ## Step 1. Getting started. 
 
-Download CPU optimized Tensorflow from:
-- [Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide), or 
-- [Build](https://github.com/tensorflow/tensorflow/#community-supported-builds) *(Linux CPU with Intel® MKL-DNN Nightly)*\
-
+Download CPU optimized Tensorflow from the following [guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
 
 Access and download the [MovieLen1Ms](http://files.grouplens.org/datasets/movielens/) datasets.

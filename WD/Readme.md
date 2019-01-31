@@ -42,10 +42,7 @@ KEYWORDS. Convolutional Neural Networks, Wide And Deep, Recommender Systems, Ten
 
 ## Step 1. Getting started.
 
-Download CPU optimized Tensorflow from:
-- [Guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide), or 
-- [Build](https://github.com/tensorflow/tensorflow/#community-supported-builds) *(Linux CPU with Intel® MKL-DNN Nightly)*
-
+Download CPU optimized Tensorflow from the following [guide](https://software.intel.com/en-us/articles/intel-optimization-for-tensorflow-installation-guide)
 
 
 [Download models and datasets (*with different applications and tutorials*)](https://github.com/tensorflow/models/tree/master/official/wide_deep)
